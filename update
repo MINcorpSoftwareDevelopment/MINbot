@@ -5,7 +5,7 @@ const TOKEN = "NDgwNzA3NTUyOTU5NjYwMDMy.DluK7w.-CH-BNvcfjFx3d8Dkb5-55O0O9g";
 var schedule = require('node-schedule');
 var bot = new Discord.Client();
 
-bot.on("message", function(message) {
+bot.on("ready", function(message) {
     var channel = bot.channels.find("name", "general");
     channel.sendMessage("Hello Owner Just Restarted Me!");
 

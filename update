@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const TOKEN = "NDgwNzA3NTUyOTU5NjYwMDMy.DluJuw.iS5wqEZxYpNZNE_76slPGD3o1QA";
+const TOKEN = "NDgwNzA3NTUyOTU5NjYwMDMy.DluK7w.-CH-BNvcfjFx3d8Dkb5-55O0O9g";
 
 var schedule = require('node-schedule');
 var bot = new Discord.Client();
@@ -20,4 +20,4 @@ bot.on("message", function(message) {
     console.log("Bot is ready.");
 });
 
-bot.login(NDgwNzA3NTUyOTU5NjYwMDMy.DluJuw.iS5wqEZxYpNZNE_76slPGD3o1QA);
+bot.login(NDgwNzA3NTUyOTU5NjYwMDMy.DluK7w.-CH-BNvcfjFx3d8Dkb5-55O0O9g);

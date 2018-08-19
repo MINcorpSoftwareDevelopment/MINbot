@@ -1,3 +1,7 @@
+client.on("message", $ => {
+  // This code runs when the event is triggered
+});
+
 const Discord = require("discord.js");
 
 const TOKEN = "NDgwNzA3NTUyOTU5NjYwMDMy.DluK7w.-CH-BNvcfjFx3d8Dkb5-55O0O9g";

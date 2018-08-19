@@ -1,0 +1,24 @@
+const Discord = require("discord.js");
+
+const TOKEN = "NDgwNzA3NTUyOTU5NjYwMDMy.DluJTA.W03Ar_TaN9z0IxFhqbMZoy5uQ4k";
+
+var Discord = require("discord.js");
+var schedule = require('node-schedule');
+var bot = new Discord.Client();
+
+bot.on("message", function(message) {
+    var channel = bot.channels.find("name", "general");
+    channel.sendMessage("Hello Owner Just Restarted Me!");
+
+    var rule = new schedule.RecurrenceRule();
+    rule.minute = 0;
+    rule.hour = [14, 19, 20];
+
+    var j = schedule.scheduleJob(rule, function() {
+        bot.channels.get("id", channel).sendMessage("Testing");
+    })
+
+    console.log("Bot is ready.");
+});
+
+bot.login(NDgwNzA3NTUyOTU5NjYwMDMy.DluJTA.W03Ar_TaN9z0IxFhqbMZoy5uQ4k);

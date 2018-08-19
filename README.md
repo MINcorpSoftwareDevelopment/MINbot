@@ -1,0 +1,2 @@
+# MINbot
+controls MIN bot
